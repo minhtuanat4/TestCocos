@@ -20,13 +20,34 @@
       {
         "index": 3,
         "name": "BlueRange"
+      },
+      {
+        "index": 4,
+        "name": "HeadZone"
+      },
+      {
+        "index": 6,
+        "name": "Player"
+      },
+      {
+        "index": 7,
+        "name": "BlueZone"
+      },
+      {
+        "index": 8,
+        "name": "Target"
       }
     ],
     "collisionMatrix": {
       "0": 7,
-      "1": 7,
-      "2": 15,
-      "3": 4
+      "1": 327,
+      "2": 207,
+      "3": 4,
+      "4": 96,
+      "5": 16,
+      "6": 278,
+      "7": 260,
+      "8": 450
     }
   }
 }

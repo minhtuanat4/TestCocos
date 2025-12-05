@@ -80,7 +80,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 1900,
-      "height": 40
+      "height": 80
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -184,21 +184,21 @@
     "__prefab": {
       "__id__": 9
     },
-    "tag": 0,
-    "_group": 1,
+    "tag": 3,
+    "_group": 2,
     "_density": 1,
     "_sensor": false,
     "_friction": 0.2,
     "_restitution": 0,
     "_offset": {
       "__type__": "cc.Vec2",
-      "x": 3.5,
-      "y": -2.2
+      "x": 5.4,
+      "y": -0.3
     },
     "_size": {
       "__type__": "cc.Size",
-      "width": 1900,
-      "height": 40
+      "width": 1911.6,
+      "height": 83.3
     },
     "_id": ""
   },

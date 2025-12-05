@@ -1,11 +1,9 @@
-import { _decorator, Button, CCFloat, Component, EventTouch, Node, Vec3 } from 'cc';
+import { _decorator, CCFloat, Component, EventTouch, Node, Vec3 } from 'cc';
+import { GameController } from './GameController';
 const { ccclass, property } = _decorator;
 
-
-
-@ccclass('Horizontal Btn')
-export class Player_Horizontal extends Component {
-
+@ccclass('ForBackWard')
+export class ForBackWard extends Component {
     @property(Node)
     private player: Node = null
 
@@ -33,6 +31,13 @@ export class Player_Horizontal extends Component {
     }
 
     onPressStart(event: EventTouch) {
+        if (!GameController.instance.isStartGame) {
+            return;
+        }
+        if (GameController.instance.gameInProcessing) {
+            return;
+        }
+
         this.isPressed = true;
     }
 
@@ -43,10 +48,17 @@ export class Player_Horizontal extends Component {
     onPressCancel(event: EventTouch) {
         this.resetState();
     }
+
     resetState() {
         this.isPressed = false;
     }
     update(deltaTime: number) {
+        if (this.horizontalType <= 0 && GameController.instance.limitLeft) {
+            return;
+        }
+        if (this.horizontalType > 0 && GameController.instance.limitRight) {
+            return;
+        }
         if (this.isPressed) {
             const distanceToMove = this.moveSpeed * deltaTime;
             const currentPosition = this.player.getPosition();

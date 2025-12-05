@@ -2,12 +2,12 @@
   "ver": "1.1.50",
   "importer": "prefab",
   "imported": true,
-  "uuid": "8de25000-4ca4-4060-b9a1-24fa9f372543",
+  "uuid": "6c4fa21e-3b1d-47f0-855e-8b813779fed7",
   "files": [
     ".json"
   ],
   "subMetas": {},
   "userData": {
-    "syncNodeName": "Bear"
+    "syncNodeName": "Wall"
   }
 }
